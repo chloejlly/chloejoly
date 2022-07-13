@@ -1,0 +1,405 @@
+/******** CLASSES GLOBALES ********/
+
+header nav, footer {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ligne {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+/******** HEADER ********/
+header{
+	background-size: cover;
+	background-position: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 10px;
+}
+.nav-link {
+	color: #ffa198;
+	margin: 5px;
+}
+
+.navbar-nav .nav-link.active {
+	color: #ffa198;
+}
+
+.navbar-nav {
+	align-items: flex-end;
+	color: #ffa198;
+}
+
+header h1 {
+	color: #ffa198;
+    font-family:'Secular One', sans-serif;
+	font-size: 50px;
+}
+
+.nom {
+	margin-left: 30px;
+}
+
+/******** MAIN ********/
+
+/******** Porfolio ********/
+
+main section article{
+	margin: 20px;
+	padding: 20px;
+}
+
+.portfolio {
+	margin-top: 50px;
+	margin-bottom: 120px;
+}
+
+.blocs {
+	align-items: center;
+	justify-content: center;
+}
+
+.text-center {
+	padding-top: 10px;
+}
+
+.projets {
+	height: 200px;
+	width: 300px;
+}
+
+/******** Formulaire de contact ********/
+.contact {
+	width: 700px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contact h2 {
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+.blocnom, .blocmail, .blocsujet {
+	color: #59595b;
+	min-height: 20px;
+	min-width: 700px;
+	background-color:#f1f1f1;
+}
+
+.blocmsg {
+	color: #59595b;
+	min-height: 300px;
+	min-width: 700px;
+	background-color:#f1f1f1;
+}
+
+.bloc {
+	border:#59595b;
+}
+
+.formulaire {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.boutonform {
+	background-color: #ffa198;
+	border : 1px solid #ffa198;
+	margin-top: 10px;
+	padding : 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: white;
+	min-height: 20px;
+	min-width: 100px;
+	margin-bottom: 50px;
+}
+
+/******** Qui suis-je ********/
+.hello {
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.portrait {
+	width: 400px;
+}
+
+.mail, .lk, .insta, .link {
+	color: white;
+	text-decoration: underline;
+}
+
+.mailrose {
+	color: #ffa198;
+}
+
+/******** Page 1 ********/
+
+.page1 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+/******** Page 2 ********/
+
+.page2 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+/******** Page 3 ********/
+
+.page3 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+/******** Page 4 ********/
+
+.page4 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+/******** Page 5 ********/
+
+.broderies {
+	max-height: 800px;
+}
+
+.page5 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+/******** Page 6 ********/
+
+/******** FOOTER ********/
+
+footer{
+	font-size: 20px;
+	background-color: #ffa198;
+	color: white;
+	background-size: cover;
+	background-position: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	margin-top: 20px;
+}
+
+footer section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rs {
+	display: inline-block;
+}
+
+
+/******** MEDIA QUERIES ********/
+/* css qui s'appliquera de 0px à 767px = MOBILE */
+@media (max-width: 767px) {
+header nav ul {
+	display: none;
+}
+
+header nav #burger {
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background-color: #2845CC;
+	position: relative;
+}
+
+header nav #burger::before {
+	content: "";
+	width: 40px;
+	height: 3px;
+	background-color: #2845CC;
+	position: absolute;
+	top:-10px;
+	left: 0;
+}
+
+header nav #burger::after {
+	content: "";
+	width: 40px;
+	height: 3px;
+	background-color: #2845CC;
+	position: absolute;
+	top:10px;
+	left: 0;
+}
+
+.contact {
+	width: 400px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contact h2 {
+	width: 400px;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+.blocnom, .blocmail, .blocsujet {
+	color: #59595b;
+	min-height: 20px;
+	min-width: 400px;
+	background-color:#f1f1f1;
+}
+
+.blocmsg {
+	color: #59595b;
+	min-height: 200px;
+	min-width: 400px;
+	background-color:#f1f1f1;
+}
+
+.bloc {
+	border:#59595b;
+}
+
+.formulaire {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.boutonform {
+	background-color: #2845CC;
+	border : 1px solid #2845CC;
+	margin-top: 10px;
+	padding : 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: white;
+	min-height: 20px;
+	min-width: 100px;
+	margin-bottom: 50px;
+}
+}
+
+
+
+
+/******* ANIMATION *********/
+
+.box{
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all .5s;
+}
+.box:hover{ box-shadow: 3px 3px 5px #999; }
+.box:before,
+.box:after{
+    content: "";
+    background: radial-gradient(circle at 23% 70%,rgba(255,255,255,0.8),#fff 30%);
+    width: 150%;
+    height: 150%;
+    opacity: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top:-10.5%;
+    right:-150%;
+    z-index: 1;
+    transition: all 0.35s ease;
+}
+.box:after{
+    background: rgba(255,255,255,0.5);
+    width: 65%;
+    height: 65%;
+    right: auto;
+    left: -20%;
+    top: -65%;
+}
+.box:hover:before{
+    opacity: 1;
+    right: -85%;
+}
+.box:hover:after{
+    opacity: 1;
+    top: -42%;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+.box:hover img{ transform: scale(1.2); }
+.box .box-content{
+    text-align: right;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    z-index: 2;
+    transition: all .5s;
+}
+.box:hover .box-content{ right: 5%; }
+.box .title{
+    color: #1e272e;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 3px 0;
+}
+.box .post{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+    display: block;
+}
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box .icon li{
+    display: inline-block;
+    margin: 0 4px;
+}
+.box .icon li a{
+    color: #fff;
+    background-color: #1e272e;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s;
+}
+.box .icon li  a:hover{
+    color: #1e272e;
+    background-color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 5px #1e272e inset;
+}
+@media only screen and (max-width:990px){
+    .box { margin: 0 0 30px; }
+}
+@media only screen and (max-width:479px){
+    .box .title{ font-size: 20px; }
+}
